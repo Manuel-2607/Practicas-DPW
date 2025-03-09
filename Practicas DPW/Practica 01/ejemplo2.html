@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entada de datos</title>
+</head>
+
+<body>
+    <h2> Introduce tu nombre </h2>
+    <input type="text" id="nombreUsuario">
+    <button onclick="mostrarNombre()"> Mostrar</button>
+    <p id="saludo"></p>
+
+    <script>
+        function mostrarNombre() {
+            let nombre = document.getElementById("nombreUsuario").value;
+            document.getElementById("saludo").innerHTML = `Hola, ${nombre}!`;
+
+        }
+    </script>
+</body>
+
+</html>
