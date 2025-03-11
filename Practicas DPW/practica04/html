@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Estudiantes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #cf5757;
+        }
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            background-color: rgb(243, 2, 2);
+            box-shadow: 0px 0px 10px rgba(42, 5, 5, 0.1);
+        }
+        th, td {
+            border: 1px solid #ff7979;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #121212;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Calificación</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Angel Aguilar</td>
+                <td>10</td>
+                <td>8</td>
+                <td>Aprobado</td>
+            </tr>
+            <tr>
+                <td>Nancy Hernandez</td>
+                <td>8</td>
+                <td>7</td>
+                <td>Aprobado</td>
+            </tr>
+            <tr>
+                <td>Mario Gonzalez</td>
+                <td>1</td>
+                <td>6</td>
+                <td>Reprobado</td>
+            </tr>
+            <tr>
+                <td>Patrick Ramos</td>
+                <td>10</td>
+                <td>9</td>
+                <td>Aprobado</td>
+            </tr>
+            <tr>
+                <td>Carlos Manuel</td>
+                <td>2</td>
+                <td>5</td>
+                <td>Reprobado</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
