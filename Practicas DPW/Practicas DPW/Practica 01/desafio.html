@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrada de datos</title>
+</head>
+
+<body>
+    <h2>Introduce tu nombre</h2>
+    <input type="text" id="nombreUsuario">
+
+    <h2>Introduce tu edad</h2>
+    <input type="number" id="edadUsuario">
+    <button onclick="mostrarInfo()">Mostrar</button>
+    <p id="saludo"></p>
+    <p id="mensajeEdad"></p>
+
+    <script>
+        function mostrarInfo() {
+            let nombre = document.getElementById("nombreUsuario").value;
+            let edad = parseInt(document.getElementById("edadUsuario").value);
+            document.getElementById("saludo").innerHTML = `Hola, ${nombre}, tu edad es de ${edad} años!`;
+
+            if (edad >= 18) {
+                document.getElementById("mensajeEdad").innerHTML = "Eres mayor de edad.";
+            } else {
+                document.getElementById("mensajeEdad").innerHTML = "Eres menor de edad.";
+            }
+        }
+    </script>
+</body>
+
+</html>
